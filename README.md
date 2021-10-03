@@ -13,5 +13,6 @@ sudo apt-get install git-lfs
 git-lfs install
 ```
 
-
-
+### Installed packages
+pip3 install mediapipe
+pip3 install --upgrade imutils
