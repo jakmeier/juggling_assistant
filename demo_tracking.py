@@ -30,9 +30,14 @@ else:
     # initialize a dictionary that maps strings to their corresponding
     # OpenCV object tracker implementations
     OPENCV_OBJECT_TRACKERS = {
+        #"boosting": cv2.TrackerBoosting_create,
+        "mil": cv2.TrackerMIL_create,
+        #"tld": cv2.TrackerTLD_create,
+        #"medianflow": cv2.TrackerMedianFlow_create,
+        #"mosse": cv2.TrackerMOSSE_create,
         "csrt": cv2.TrackerCSRT_create,
-       "kcf": cv2.TrackerKCF_create,
-       "goturn": cv2.TrackerGOTURN_create
+        "kcf": cv2.TrackerKCF_create,
+        "goturn": cv2.TrackerGOTURN_create
     }
     # grab the appropriate object tracker using our dictionary of
     # OpenCV object tracker objects
